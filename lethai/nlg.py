@@ -11,14 +11,16 @@ class config:
             'Auth-Key': api_token,
             'Auth-username': self.__username
         }
-        self.__dataset_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/dataset'
-        self.__detect_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/detect-bias'
+        self.__dataset_api_url = 'http://localhost:4000/v1/discrimination/nlg/dataset'
+        self.__detect_api_url = 'http://localhost:4000/v1/discrimination/nlg/detect-bias'
         self.__dataset = None
 
     def check_discrimination(self, generator, model_name):
+        print(generator, model_name)
+        print(json.dumps(self.__headers))
         # Gets the dataset from the backend if not already available in the frontend
         if self.__dataset is None:
-            self.__dataset = self.__get_dataset(self.__dataset_api_url)
+            self.__dataset = self.__get_dataset(self.__dataset_api_url, self.__headers)
             if self.__dataset is None:
                 return None
 
@@ -65,8 +67,8 @@ class config:
         webbrowser.open_new_tab(html_file_path)
 
     @staticmethod
-    def __get_dataset(url):
-        response = requests.get(url=url)
+    def __get_dataset(url, headers):
+        response = requests.get(url=url, headers=headers)
         if response.status_code == 200:
             return response.json()
         print('[?] Unexpected Error: [HTTP {0}]: Content: {1}'.format(response.status_code, response.content))
