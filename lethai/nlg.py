@@ -1,6 +1,8 @@
-import requests, json
-import webbrowser
 import os
+import webbrowser
+
+import json
+import requests
 
 
 class config:
@@ -11,8 +13,8 @@ class config:
             'Auth-Key': api_token,
             'Auth-username': self.__username
         }
-        self.__dataset_api_url = 'http://localhost:4000/v1/discrimination/nlg/dataset'
-        self.__detect_api_url = 'http://localhost:4000/v1/discrimination/nlg/detect-bias'
+        self.__dataset_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/dataset'
+        self.__detect_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/detect-bias'
         self.__dataset = None
 
     def check_discrimination(self, generator, model_name):
@@ -54,7 +56,10 @@ class config:
             print('[?] Unexpected Error: [HTTP {0}]: Content: {1}'.format(response.status_code, response.content))
             return None
         bias_results = json.loads(response.content)
-        config.__open_browser(bias_results)
+        if bias_results['success']:
+            config.__open_browser(bias_results["result"])
+        else:
+            print(bias_results["message"])
 
     @staticmethod
     def __open_browser(results):
@@ -70,7 +75,7 @@ class config:
     def __get_dataset(url, headers):
         response = requests.get(url=url, headers=headers)
         if response.status_code == 200:
-            return response.json()
+            return response.json()["result"]
         print('[?] Unexpected Error: [HTTP {0}]: Content: {1}'.format(response.status_code, response.content))
         return None
 
@@ -84,7 +89,7 @@ class config:
                 data[category][datapoint] = {}
                 for text in categories[category][datapoint]:
                     data[category][datapoint][text] = []
-                    for i in range(10):
+                    for i in range(1):
                         data[category][datapoint][text].append(generator(text))
 
         return data

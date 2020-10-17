@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lethai"
-version = "0.0.2"
+version = "0.0.6"
 description = "Lethical AI python library."
 authors = ["Amanl04 <amanlodha423@outlook.com>"]
 
