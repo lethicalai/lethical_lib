@@ -6,12 +6,16 @@ import os
 class config:
     def __init__(self, username, api_token):
         self.__username = username
-        self.__headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer {0}'.format(api_token)}
-        self.__dataset_api_url = 'https://api.lethical.ai/v1/nlg/dataset'
-        self.__detect_api_url = 'https://api.lethical.ai/v1/nlg/detect-bias'
+        self.__headers = {
+            'Content-Type': 'application/json',
+            'Auth-Key': api_token,
+            'Auth-username': self.__username
+        }
+        self.__dataset_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/dataset'
+        self.__detect_api_url = 'https://api.lethical.ai/v1/discrimination/nlg/detect-bias'
         self.__dataset = None
 
-    def check_discrimination(self, generator):
+    def check_discrimination(self, generator, model_name):
         # Gets the dataset from the backend if not already available in the frontend
         if self.__dataset is None:
             self.__dataset = self.__get_dataset(self.__dataset_api_url)
@@ -23,7 +27,11 @@ class config:
 
         # Now results has the generated text from the NLG model for various categories
         # We need to sync this output with the backend and process the biases (if any) in this model
-        response = requests.post(self.__detect_api_url, headers=self.__headers, json=results)
+        json_data = dict()
+        if model_name:
+            json_data['model_name'] = model_name
+        json_data["data"] = results
+        response = requests.post(self.__detect_api_url, headers=self.__headers, json=json_data)
         if response.status_code >= 500:
             print('[!] [{0}] Server Error'.format(response.status_code))
             return None
