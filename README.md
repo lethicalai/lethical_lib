@@ -17,10 +17,10 @@ Steps to follow
 
 *NOTE: The key will only be shown once. This is for security purposes*
 
-Installation
+### Installation
 > pip3 install lethai
 
-Usage
+### Usage
 The various features provided by our library include the following:
 
 Discrimination detection
