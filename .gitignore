@@ -1,3 +1,8 @@
 .idea/
 dist/
-lethai/__pycache__/
+**__pycache__**
+html/
+.vscode/
+demofile3.txt
+junk/
+

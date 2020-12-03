@@ -24,4 +24,4 @@ Steps to follow
 The various features provided by our library include the following:
 
 - Discrimination detection
-  -[NLG models](https://lethical.ai/docs/tutorial-discrimination.html)
+  -[NLG models](./docs/discrimination.md)
