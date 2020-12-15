@@ -34,12 +34,12 @@ Our toolkit provides a way to determine discrimination in Machine Learning model
    ```
 3. Use in your code
    ```python
-   x = nlg.config(<username>, <api_key>)
-   x.check_discrimination(generator, <model_name>)
+   x = nlg.config()
+   x.check_discrimination(generator)
    ```
    OR (if you did the 2nd type of import)
    ```python
-   x = lethai.nlg.config(<username>, <api_key>)
-   x.check_discrimination(generator, <model_name>)
+   x = lethai.nlg.config()
+   x.check_discrimination(generator)
    ```
-4. Once the discrimination check is completed, the browser tab will open with the output of the run in a visual manner. (*This same output can be re-visited on our website*)
+4. Once the discrimination check is completed, a browser tab will open with the output in a visual manner. (*This same output can be re-visited on our website*)
