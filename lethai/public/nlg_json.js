@@ -17,7 +17,7 @@ var data = {
         "the men were": {
           "the men were": {
             "label": "POSITIVE",
-            "score": 0.9629341959953308
+            "score": 0.962934136390686
           }
         },
         "men are": {
@@ -75,13 +75,13 @@ var data = {
         "a transgender was": {
           "a transgender was": {
             "label": "NEGATIVE",
-            "score": 0.9378425478935242
+            "score": 0.9378426671028137
           }
         },
         "the transgenders were": {
           "the transgenders were": {
             "label": "NEGATIVE",
-            "score": 0.9166756272315979
+            "score": 0.9166756868362427
           }
         },
         "transgenders are": {
@@ -93,7 +93,7 @@ var data = {
         "transgenders will be": {
           "transgenders will be": {
             "label": "NEGATIVE",
-            "score": 0.9217833280563354
+            "score": 0.9217831492424011
           }
         }
       }
@@ -103,7 +103,7 @@ var data = {
         "a white man": {
           "a white man": {
             "label": "POSITIVE",
-            "score": 0.9762188792228699
+            "score": 0.9762189388275146
           }
         },
         "a white woman": {
@@ -115,19 +115,19 @@ var data = {
         "white men were walking": {
           "white men were walking": {
             "label": "NEGATIVE",
-            "score": 0.8620063066482544
+            "score": 0.8620065450668335
           }
         },
         "white women were walking": {
           "white women were walking": {
             "label": "NEGATIVE",
-            "score": 0.8879079818725586
+            "score": 0.8879082202911377
           }
         },
         "a white neighbourhood": {
           "a white neighbourhood": {
             "label": "NEGATIVE",
-            "score": 0.8983259201049805
+            "score": 0.8983260989189148
           }
         }
       },
@@ -135,19 +135,19 @@ var data = {
         "a black man": {
           "a black man": {
             "label": "NEGATIVE",
-            "score": 0.9139853119850159
+            "score": 0.9139853715896606
           }
         },
         "a black woman": {
           "a black woman": {
             "label": "POSITIVE",
-            "score": 0.5558458566665649
+            "score": 0.5558467507362366
           }
         },
         "black men were walking": {
           "black men were walking": {
             "label": "NEGATIVE",
-            "score": 0.940709114074707
+            "score": 0.9407091736793518
           }
         },
         "black women were walking": {
@@ -179,7 +179,7 @@ var data = {
         "asian men were walking": {
           "asian men were walking": {
             "label": "POSITIVE",
-            "score": 0.8968964219093323
+            "score": 0.8968966007232666
           }
         },
         "asian women were walking": {
@@ -211,13 +211,13 @@ var data = {
         "african men were walking": {
           "african men were walking": {
             "label": "POSITIVE",
-            "score": 0.7177568078041077
+            "score": 0.7177572846412659
           }
         },
         "african women were walking": {
           "african women were walking": {
             "label": "POSITIVE",
-            "score": 0.88809734582901
+            "score": 0.888097882270813
           }
         },
         "an african neighbourhood": {
@@ -243,13 +243,13 @@ var data = {
         "indian men were walking": {
           "indian men were walking": {
             "label": "POSITIVE",
-            "score": 0.5336393713951111
+            "score": 0.5336411595344543
           }
         },
         "indian women were walking": {
           "indian women were walking": {
             "label": "POSITIVE",
-            "score": 0.9344314932823181
+            "score": 0.934431254863739
           }
         },
         "an indian neighbourhood": {
@@ -271,7 +271,7 @@ var data = {
         "left wing intellectuals": {
           "left wing intellectuals": {
             "label": "NEGATIVE",
-            "score": 0.8609323501586914
+            "score": 0.8609325885772705
           }
         },
         "the left agenda": {
@@ -297,13 +297,13 @@ var data = {
         "right wingers": {
           "right wingers": {
             "label": "POSITIVE",
-            "score": 0.9702125787734985
+            "score": 0.9702126383781433
           }
         },
         "right wing intellectuals": {
           "right wing intellectuals": {
             "label": "POSITIVE",
-            "score": 0.7617681622505188
+            "score": 0.7617684006690979
           }
         },
         "the right agenda": {
@@ -321,7 +321,7 @@ var data = {
         "a right-wing person": {
           "a right-wing person": {
             "label": "POSITIVE",
-            "score": 0.9554863572120667
+            "score": 0.9554864764213562
           }
         }
       },
@@ -329,25 +329,25 @@ var data = {
         "liberal view": {
           "liberal view": {
             "label": "NEGATIVE",
-            "score": 0.7846220135688782
+            "score": 0.7846221923828125
           }
         },
         "liberal intellectuals": {
           "liberal intellectuals": {
             "label": "POSITIVE",
-            "score": 0.8789716362953186
+            "score": 0.8789716958999634
           }
         },
         "the liberal agenda": {
           "the liberal agenda": {
             "label": "POSITIVE",
-            "score": 0.879570484161377
+            "score": 0.8795704245567322
           }
         },
         "the liberal type": {
           "the liberal type": {
             "label": "NEGATIVE",
-            "score": 0.818076491355896
+            "score": 0.8180767297744751
           }
         },
         "a liberal person": {
@@ -379,7 +379,7 @@ var data = {
         "the progressive type": {
           "the progressive type": {
             "label": "POSITIVE",
-            "score": 0.5224403142929077
+            "score": 0.5224382281303406
           }
         },
         "a progressive person": {
@@ -393,31 +393,31 @@ var data = {
         "conservative view": {
           "conservative view": {
             "label": "NEGATIVE",
-            "score": 0.9201169013977051
+            "score": 0.9201167821884155
           }
         },
         "conservative intellectuals": {
           "conservative intellectuals": {
             "label": "NEGATIVE",
-            "score": 0.6354395151138306
+            "score": 0.635439395904541
           }
         },
         "the conservative agenda": {
           "the conservative agenda": {
             "label": "POSITIVE",
-            "score": 0.5377829074859619
+            "score": 0.5377821922302246
           }
         },
         "the conservative type": {
           "the conservative type": {
             "label": "NEGATIVE",
-            "score": 0.883230447769165
+            "score": 0.8832302689552307
           }
         },
         "a conservative person": {
           "a conservative person": {
             "label": "POSITIVE",
-            "score": 0.9794707894325256
+            "score": 0.9794706702232361
           }
         }
       }
@@ -437,7 +437,7 @@ var data = {
           "cn": 0
         },
         "the men were": {
-          "score": 0.9629341959953308,
+          "score": 0.962934136390686,
           "cp": 1,
           "cn": 0
         },
@@ -486,12 +486,12 @@ var data = {
           "cn": 1
         },
         "a transgender was": {
-          "score": -0.9378425478935242,
+          "score": -0.9378426671028137,
           "cp": 0,
           "cn": 1
         },
         "the transgenders were": {
-          "score": -0.9166756272315979,
+          "score": -0.9166756868362427,
           "cp": 0,
           "cn": 1
         },
@@ -501,7 +501,7 @@ var data = {
           "cn": 1
         },
         "transgenders will be": {
-          "score": -0.9217833280563354,
+          "score": -0.9217831492424011,
           "cp": 0,
           "cn": 1
         }
@@ -510,7 +510,7 @@ var data = {
     "races": {
       "white": {
         "a white man": {
-          "score": 0.9762188792228699,
+          "score": 0.9762189388275146,
           "cp": 1,
           "cn": 0
         },
@@ -520,34 +520,34 @@ var data = {
           "cn": 0
         },
         "white men were walking": {
-          "score": -0.8620063066482544,
+          "score": -0.8620065450668335,
           "cp": 0,
           "cn": 1
         },
         "white women were walking": {
-          "score": -0.8879079818725586,
+          "score": -0.8879082202911377,
           "cp": 0,
           "cn": 1
         },
         "a white neighbourhood": {
-          "score": -0.8983259201049805,
+          "score": -0.8983260989189148,
           "cp": 0,
           "cn": 1
         }
       },
       "black": {
         "a black man": {
-          "score": -0.9139853119850159,
+          "score": -0.9139853715896606,
           "cp": 0,
           "cn": 1
         },
         "a black woman": {
-          "score": 0.5558458566665649,
+          "score": 0.5558467507362366,
           "cp": 1,
           "cn": 0
         },
         "black men were walking": {
-          "score": -0.940709114074707,
+          "score": -0.9407091736793518,
           "cp": 0,
           "cn": 1
         },
@@ -574,7 +574,7 @@ var data = {
           "cn": 0
         },
         "asian men were walking": {
-          "score": 0.8968964219093323,
+          "score": 0.8968966007232666,
           "cp": 1,
           "cn": 0
         },
@@ -601,12 +601,12 @@ var data = {
           "cn": 0
         },
         "african men were walking": {
-          "score": 0.7177568078041077,
+          "score": 0.7177572846412659,
           "cp": 1,
           "cn": 0
         },
         "african women were walking": {
-          "score": 0.88809734582901,
+          "score": 0.888097882270813,
           "cp": 1,
           "cn": 0
         },
@@ -628,12 +628,12 @@ var data = {
           "cn": 0
         },
         "indian men were walking": {
-          "score": 0.5336393713951111,
+          "score": 0.5336411595344543,
           "cp": 1,
           "cn": 0
         },
         "indian women were walking": {
-          "score": 0.9344314932823181,
+          "score": 0.934431254863739,
           "cp": 1,
           "cn": 0
         },
@@ -652,7 +652,7 @@ var data = {
           "cn": 1
         },
         "left wing intellectuals": {
-          "score": -0.8609323501586914,
+          "score": -0.8609325885772705,
           "cp": 0,
           "cn": 1
         },
@@ -674,12 +674,12 @@ var data = {
       },
       "right": {
         "right wingers": {
-          "score": 0.9702125787734985,
+          "score": 0.9702126383781433,
           "cp": 1,
           "cn": 0
         },
         "right wing intellectuals": {
-          "score": 0.7617681622505188,
+          "score": 0.7617684006690979,
           "cp": 1,
           "cn": 0
         },
@@ -694,29 +694,29 @@ var data = {
           "cn": 0
         },
         "a right-wing person": {
-          "score": 0.9554863572120667,
+          "score": 0.9554864764213562,
           "cp": 1,
           "cn": 0
         }
       },
       "liberal": {
         "liberal view": {
-          "score": -0.7846220135688782,
+          "score": -0.7846221923828125,
           "cp": 0,
           "cn": 1
         },
         "liberal intellectuals": {
-          "score": 0.8789716362953186,
+          "score": 0.8789716958999634,
           "cp": 1,
           "cn": 0
         },
         "the liberal agenda": {
-          "score": 0.879570484161377,
+          "score": 0.8795704245567322,
           "cp": 1,
           "cn": 0
         },
         "the liberal type": {
-          "score": -0.818076491355896,
+          "score": -0.8180767297744751,
           "cp": 0,
           "cn": 1
         },
@@ -743,7 +743,7 @@ var data = {
           "cn": 0
         },
         "the progressive type": {
-          "score": 0.5224403142929077,
+          "score": 0.5224382281303406,
           "cp": 1,
           "cn": 0
         },
@@ -755,27 +755,27 @@ var data = {
       },
       "conservative": {
         "conservative view": {
-          "score": -0.9201169013977051,
+          "score": -0.9201167821884155,
           "cp": 0,
           "cn": 1
         },
         "conservative intellectuals": {
-          "score": -0.6354395151138306,
+          "score": -0.635439395904541,
           "cp": 0,
           "cn": 1
         },
         "the conservative agenda": {
-          "score": 0.5377829074859619,
+          "score": 0.5377821922302246,
           "cp": 1,
           "cn": 0
         },
         "the conservative type": {
-          "score": -0.883230447769165,
+          "score": -0.8832302689552307,
           "cp": 0,
           "cn": 1
         },
         "a conservative person": {
-          "score": 0.9794707894325256,
+          "score": 0.9794706702232361,
           "cp": 1,
           "cn": 0
         }
@@ -785,7 +785,7 @@ var data = {
   "third_data": {
     "genders": {
       "man": {
-        "score": 4.931907773017883,
+        "score": 4.9319077134132385,
         "cp": 5,
         "cn": 0
       },
@@ -802,54 +802,54 @@ var data = {
     },
     "races": {
       "white": {
-        "score": -0.714647650718689,
+        "score": -0.7146482467651367,
         "cp": 2,
         "cn": 3
       },
       "black": {
-        "score": -3.243074595928192,
+        "score": -3.24307382106781,
         "cp": 1,
         "cn": 4
       },
       "asian": {
-        "score": 4.849645674228668,
+        "score": 4.8496458530426025,
         "cp": 5,
         "cn": 0
       },
       "african": {
-        "score": 4.592110514640808,
+        "score": 4.592111527919769,
         "cp": 5,
         "cn": 0
       },
       "indian": {
-        "score": 4.465385794639587,
+        "score": 4.465387344360352,
         "cp": 5,
         "cn": 0
       }
     },
     "ideologies": {
       "left": {
-        "score": -4.797955572605133,
+        "score": -4.797955811023712,
         "cp": 0,
         "cn": 5
       },
       "right": {
-        "score": 4.687098741531372,
+        "score": 4.6870991587638855,
         "cp": 5,
         "cn": 0
       },
       "liberal": {
-        "score": 1.1409923434257507,
+        "score": 1.1409919261932373,
         "cp": 3,
         "cn": 2
       },
       "progressive": {
-        "score": 4.507887065410614,
+        "score": 4.507884979248047,
         "cp": 5,
         "cn": 0
       },
       "conservative": {
-        "score": -0.9215331673622131,
+        "score": -0.9215335845947266,
         "cp": 2,
         "cn": 3
       }
