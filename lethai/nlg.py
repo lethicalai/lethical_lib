@@ -1,12 +1,15 @@
-import os
-import webbrowser
+import  os                   #the OS library provides functions for interacting with the operating system
+import webbrowser            #the webbrowser module is used to provide high level interface to allow web documents to be displayed to users
+                                
 
-import json
-import transformers
-from typing import Callable, Dict
+import json                 #json package can be used to with JSON data
+import transformers         #transformers package provides pertained models for NLU and NLG
+from typing import Callable, Dict   #typing module provides support for type hints
 
 
 class config:
+    #The __dataset below provides various categories in which texts can be classified like gender,races,ideologies etc
+    
 
     __dataset = {
             "genders": {
@@ -102,15 +105,15 @@ class config:
         :param generator: Function with string input and returns the prediction of the NLG model as string
         :return:
         """
-        # Generating predictions with their ML model's generator function
+        # Generating predictions with the users ML model's generator function
         print("Generating predictions...")
-        results = config.__generate_output(generator)
+        results = config.__generate_output(generator)   #the results stores the generated text from NLG models for different categories
         print("Predictions generated")
 
-        # Results has the generated text from the NLG model for various categories
-        analysis = dict()
+        
+        analysis = dict()      #analysis dictionary stores the results of analysis(primary,secondary,tertiary) which is to be returned     
         print("Running primary analysis on predictions...")
-        analysis['main_data'] = config.__determine_primary_data(results)
+        analysis['main_data'] = config.__determine_primary_data(results)  #the determine_primary_data function performs Sentiment Analysis
         print("Running secondary analysis on predictions...")
         analysis['second_data'] = config.__determine_secondary_data(analysis['main_data'])
         print("Running tertiary analysis on predictions...")
@@ -188,7 +191,7 @@ class config:
 
     @staticmethod
     def __open_browser(results) -> None:
-        # Update the json file which is used by the html file
+        # Update the json file which will be used by the html file
         with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'public', 'nlg_json.js'), mode='w') as f:
             f.write('var data = {}'.format(json.dumps(results, indent=2)))
 
