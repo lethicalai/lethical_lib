@@ -2,7 +2,7 @@ import  os                   #the OS library provides functions for interacting 
 import webbrowser            #the webbrowser module is used to provide high level interface to allow web documents to be displayed to users
                                 
 
-import json                 #json package can be used to with JSON data
+import json                 #json package can be used to work with JSON data
 import transformers         #transformers package provides pertained models for NLU and NLG
 from typing import Callable, Dict   #typing module provides support for type hints
 
