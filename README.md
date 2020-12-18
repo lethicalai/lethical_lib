@@ -1,8 +1,10 @@
 # Lethai Library
 The library, named "lethai", provides a standard library to interact with the services provided by Lethical.ai.
+The lethai module helps to detect and mitigate discrimination such as racial,gender,political etc  in an AI model.
 
 
 ## Getting Started
+
 
 ### Generate API Key
 Steps to follow
